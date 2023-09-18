@@ -2,7 +2,9 @@
 
 :root {
     --nav-bg-color: #add8e6;
-    --nav-container-bg-color: #daa520
+    --nav-container-bg-color: #daa520;
+    --main-first-section: #00008b;
+    --main-section-container-bg-color: #ee82ee
 }
 
 /* RESET */
@@ -16,9 +18,15 @@
 }
 
 .container {
-    width: 70%;
+    height: 30rem;
     margin: 0 auto;
 }
+
+.dashed {
+    border: dashed .15rem;
+}
+
+/* NAV */
 
 nav {
     display: flex;
@@ -32,7 +40,6 @@ nav {
     display: flex;
     width: 15%;
     background-color: #daa520;
-    border: dashed .15rem;
     align-items: center;
 }
 
@@ -49,4 +56,24 @@ nav {
 .nav-container.right {
     justify-content: flex-end;
     padding-right: 1rem;
+}
+
+/* MAIN */
+
+.container {
+    height: 28rem;
+    padding: 1rem
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-first-section);
+}
+
+.main-section-container {
+    width: 60%;
+    height: 90%;
+    background-color: var(--main-section-container-bg-color);
 }
