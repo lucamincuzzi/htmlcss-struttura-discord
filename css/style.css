@@ -29,11 +29,24 @@ nav {
 }
 
 .nav-container {
+    display: flex;
     width: 15%;
     background-color: #daa520;
     border: dashed .15rem;
+    align-items: center;
+}
+
+.nav-container.left {
+    padding-left: 1rem;
 }
 
 .nav-container.large {
+    justify-content: center;
     flex-grow: 1;
+    text-align: center;
+}
+
+.nav-container.right {
+    justify-content: flex-end;
+    padding-right: 1rem;
 }
