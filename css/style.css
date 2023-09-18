@@ -1,7 +1,39 @@
+/* CUSTOM */
+
+:root {
+    --nav-bg-color: #add8e6;
+    --nav-container-bg-color: #daa520
+}
+
 /* RESET */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Debug */
+    border: solid 1px black;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    background-color: var(--nav-bg-color);
+    padding: 1rem 15rem;
+}
+
+.nav-container {
+    width: 15%;
+    background-color: #daa520;
+    border: dashed .15rem;
+}
+
+.nav-container.large {
+    flex-grow: 1;
 }
